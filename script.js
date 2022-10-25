@@ -1,4 +1,15 @@
-var firstNameInput = document.querySelector("#first-name");
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'caeac0cc8fmshd1b5fa6080686fdp1b38d2jsnb347808046ef',
+		'X-RapidAPI-Host': 'tripadvisor16.p.rapidapi.com'
+	}
+};
+
+fetch('https://tripadvisor16.p.rapidapi.com/api/v1/flights/searchAirport?query=london', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
 
 
 
