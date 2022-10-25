@@ -1,0 +1,1 @@
+var firstNameInput = document.querySelector(#firs)
