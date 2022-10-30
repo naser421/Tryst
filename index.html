@@ -32,18 +32,35 @@
    <div id="form">
     <section class="form">
         <div class="form-content">
+          </div>
             <h3>Form</h3>
         </div>
     </section>
   
     <div id="Location">
     <div class="location-container">
+      <div class="dropdown">
+        <button onclick="DropDown()" class="dropbtn">Event Location</button>
+        <div id="LocationDropdown" class="dropdown-content">
+          <a href="#">San Francisco</a>
+          <a href="#">Los Angeles</a>
+          <a href="#">New York</a>
+        </div>
+      </div>
       <p>Location</p>  
     </div>
    </div>
 
    <div id="Food">
     <div class="food-container">
+      <div class="dropdown">
+        <button onclick="DropDown()" class="dropbtn">Food Options</button>
+        <div id="FoodDropdown" class="dropdown-content">
+          <!-- add location links from API-->
+          <a href="#">Chinese</a>
+          <a href="#">Pizza</a>
+          <a href="#">American</a>
+        </div>
       <p>Food</p>  
     </div>
    </div>

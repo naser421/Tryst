@@ -43,7 +43,41 @@ fetch('https://tripadvisor16.p.rapidapi.com/api/v1/flights/searchAirport?query=l
    
     // Selected Food option >>> venue+food combo details
         //food drop down menu 
-        //options : chinese, thai, pizza, american --- NASER 
+        //options : chinese,pizza, american --- NASER 
+        function DropDown() {
+            document.getElementById("LocationDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown menu if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          function DropDown() {
+            document.getElementById("FoodDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown menu if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
 
 
             //    // Selected Food option >>>  DATE 1 ((venue+food combo details))
