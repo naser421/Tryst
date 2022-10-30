@@ -14,11 +14,12 @@ fetch('https://tripadvisor16.p.rapidapi.com/api/v1/flights/searchAirport?query=l
 
 
 
+
 // Outside of Form : Name
 // Form 1 Event data 
     // location :
      
-    // Venue Type
+    // Venue Type  ---- MARK
     // Event : music, comedy, family, sports
     // Output : list :
         //- Option 1: venue 1 based off of location>venuetype>event
@@ -26,14 +27,14 @@ fetch('https://tripadvisor16.p.rapidapi.com/api/v1/flights/searchAirport?query=l
         //- Option 3: venue 3 based off of location>venue type> event
         //select venue
 
-    // Form 1 Results :
+    // Form 1 Results : --- MARK
         // Result Event List :
             // Venue 1 INFO BUTTON (LINK)/ SELECT BUTTON
             // Venue 2 INFO BUTTON (LINK)/ SELECT BUTTON
             // Venue 3 INFO BUTTON (LINK)/ SELECT BUTTON
             // selected venue opens FORM 2 (food)
 
-    // [Option Selected- From Form 1] (push location/zipcode of venue from Form 1)
+    // [Option Selected- From Form 1] (push location/zipcode of venue from Form 1) --- NASER/MARK
         //Food form 2 : food type : chinese, thai, pizza, american
         // Output: List :
         // food option 1 : chinese 1 >zipcode from option selected INFO BUTTON (LINK)/ SELECT BUTTON
@@ -41,6 +42,8 @@ fetch('https://tripadvisor16.p.rapidapi.com/api/v1/flights/searchAirport?query=l
         // food option 3 : chinese 3 >zipcode from option selected INFO BUTTON (LINK)/ SELECT BUTTON
    
     // Selected Food option >>> venue+food combo details
+        //food drop down menu 
+        //options : chinese, thai, pizza, american --- NASER 
 
 
             //    // Selected Food option >>>  DATE 1 ((venue+food combo details))
@@ -48,7 +51,7 @@ fetch('https://tripadvisor16.p.rapidapi.com/api/v1/flights/searchAirport?query=l
                 // save date > saves combo to local storage
                 // rethrink > restarts the form
 
-    //Local Storage : Date Combo Results : List :
+    //Local Storage : Date Combo Results : List :  --- NASER 
             // Date 1 : FORM 1 OUTPUT + FORM 2 OUTPUT
             // Date 2 :  FORM 1 OUTPUT + FORM 2 OUTPUT
             // Date 3 : FORM 1 OUTPUT + FORM 2 OUTPUT
