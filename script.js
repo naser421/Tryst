@@ -2,6 +2,15 @@ var selectLA = document.querySelector("#Los-Angeles");
 var selectSF = document.querySelector('#San-Francisco');
 var selectNY = document.querySelector('#New-York');
 
+selectSF.addEventListener('click', e => {
+    console.log("selected SF");
+})
+selectLA.addEventListener('click', e => {
+    console.log("selected LA");
+})
+selectNY.addEventListener('click', e=> {
+    console.log("selected NY");
+})
 
 
 
@@ -85,6 +94,7 @@ fetch('https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation?que
             }
           }
 
+// why does only one set of drop down options show
 // after selecting location > I want the form to save options to list
 //after selecting options I want resteraunt list to display by fetching
 
