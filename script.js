@@ -1,6 +1,6 @@
-var LA = document.querySelector("#Los-Angeles");
-var SF = document.querySelector('#San-Francisco');
-var NY = document.querySelector('#New-York');
+var selectLA = document.querySelector("#Los-Angeles");
+var selectSF = document.querySelector('#San-Francisco');
+var selectNY = document.querySelector('#New-York');
 
 
 
@@ -84,6 +84,11 @@ fetch('https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation?que
               }
             }
           }
+
+// after selecting location > I want the form to save options to list
+//after selecting options I want resteraunt list to display by fetching
+
+
 
 
             //    // Selected Food option >>>  DATE 1 ((venue+food combo details))
