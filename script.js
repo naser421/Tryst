@@ -3,12 +3,24 @@ var selectSF = document.querySelector('#San-Francisco');
 var selectNY = document.querySelector('#New-York');
 
 selectSF.addEventListener('click', e => {
+    fetch('https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation?query=san%20francisco', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
     console.log("selected SF");
 })
 selectLA.addEventListener('click', e => {
+    fetch('https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation?query=Los%20Angeles', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
     console.log("selected LA");
 })
 selectNY.addEventListener('click', e=> {
+    fetch('https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation?query=New%20York', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
     console.log("selected NY");
 })
 
