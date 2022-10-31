@@ -1,3 +1,10 @@
+var LA = document.querySelector("#Los-Angeles");
+var SF = document.querySelector('#San-Francisco');
+var NY = document.querySelector('#New-York');
+
+
+
+
 const options = {
 	method: 'GET',
 	headers: {
@@ -34,7 +41,7 @@ fetch('https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation?que
             // selected venue opens FORM 2 (food)
 
     // [Option Selected- From Form 1] (push location/zipcode of venue from Form 1) --- NASER/MARK
-        //Food form 2 : food type : chinese, thai, pizza, american
+        //Food form 2 : food by location : San Francisco, Los Angeles, New York
         // Output: List :
         // food option 1 : chinese 1 >zipcode from option selected INFO BUTTON (LINK)/ SELECT BUTTON
         // food option 2 : chinese 2 >zipcode from option selected INFO BUTTON (LINK)/ SELECT BUTTON
