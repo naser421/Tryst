@@ -1,11 +1,15 @@
 var selectLA = document.querySelector("#Los-Angeles");
 var selectSF = document.querySelector('#San-Francisco');
 var selectNY = document.querySelector('#New-York');
+var resultSF = document.querySelector('#results');
+var selectLAEvent =
 
 selectSF.addEventListener('click', e => {
     fetch('https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation?query=san%20francisco', options)
 	.then(response => response.json())
-	.then(response => console.log(response))
+	.then(response => 
+        // When Option san francisco is selected 10 recommendations are listed in the results section
+console.log(response))
 	.catch(err => console.error(err));
     console.log("selected SF");
 })
@@ -29,15 +33,19 @@ selectNY.addEventListener('click', e=> {
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '1d5710c295mshcd5dbc000320b5ep11aab5jsndc2fdbc54268',
-		'X-RapidAPI-Host': 'tripadvisor16.p.rapidapi.com'
+		'X-RapidAPI-Key': '90ddbc0297msh3a5bcc789ddfc52p1d32aejsn7fc608a71c32',
+        'X-RapidAPI-Host': 'tripadvisor16.p.rapidapi.com'
+
+        //'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
 	}
 };
 
-fetch('https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation?query=mumbai', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+//fetch('https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation?query=mumbai', options)
+	//.then(response => response.json())
+	//.then(response => console.log(response))
+	//.catch(err => console.error(err));
+
+
 
 
 
@@ -71,7 +79,7 @@ fetch('https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation?que
     // Selected Food option >>> venue+food combo details
         //food drop down menu 
         //options : chinese,pizza, american --- NASER 
-        function DropDown() {
+        function DropDownEvent() {
             document.getElementById("LocationDropdown").classList.toggle("show");
           }
           

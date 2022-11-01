@@ -41,7 +41,7 @@
     <div id="Location">
     <div class="location-container">
       <div class="dropdown">
-        <button onclick="DropDown()" class="dropbtn">Event Location</button>
+        <button onclick="DropDownEvent()" class="dropbtn">Event Location</button>
         <div id="LocationDropdown" class="dropdown-content"
         <a id="San-Francisco-Event" href="#">San Francisco Events</a>
         <a id="Los-Angeles-Event" href="#">Los Angeles Events</a>
@@ -57,9 +57,9 @@
       <div class="dropdown">
         <button onclick="DropDown()" class="dropbtn">Food</button>
           <div id="FoodDropdown" class="dropdown-content">
-          <a value= "SanFrancisoLocation" id="San-Francisco" href="#">San Francisco Food</a>
-          <a value="LosAngelesLocation" id="Los-Angeles" href="#">Los Angeles Food</a>
-          <a value="NewYorkLocation" id="New-York" href="#">New York Food</a>
+          <a value= "SanFrancisoLocation" id="San-Francisco" href="https://www.yelp.com/search?find_desc=Food&find_loc=San+Francisco%2C+CA">San Francisco Food</a>
+          <a value="LosAngelesLocation" id="Los-Angeles" href="https://www.yelp.com/search?find_desc=Food&find_loc=Los+Angeles%2C+CA">Los Angeles Food</a>
+          <a value="NewYorkLocation" id="New-York" href="https://www.yelp.com/search?find_desc=Food&find_loc=New+York%2C+NY">New York Food</a>
           <!-- add location links from API-->
 
         </div>
@@ -85,6 +85,7 @@
    <div id="results">
     <section class="results">
         <div class="results-content">
+          // food results
             <h3>Results</h3> 
     </section>
    </div>
@@ -92,7 +93,7 @@
    <div id="Result 1">
     <div class="result-1">
       <p>Result 1</p>  
-     <p>Food + Venue</p>
+     <p>venue results
     </div>
    </div>
 
