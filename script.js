@@ -1,15 +1,11 @@
 var selectLA = document.querySelector("#Los-Angeles");
 var selectSF = document.querySelector('#San-Francisco');
 var selectNY = document.querySelector('#New-York');
-var resultSF = document.querySelector('#results');
-var selectLAEvent =
 
 selectSF.addEventListener('click', e => {
     fetch('https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation?query=san%20francisco', options)
 	.then(response => response.json())
-	.then(response => 
-        // When Option san francisco is selected 10 recommendations are listed in the results section
-console.log(response))
+	.then(response => console.log(response))
 	.catch(err => console.error(err));
     console.log("selected SF");
 })
@@ -33,19 +29,15 @@ selectNY.addEventListener('click', e=> {
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '90ddbc0297msh3a5bcc789ddfc52p1d32aejsn7fc608a71c32',
-        'X-RapidAPI-Host': 'tripadvisor16.p.rapidapi.com'
-
-        //'X-RapidAPI-Host': 'http-cors-proxy.p.rapidapi.com'
+		'X-RapidAPI-Key': '1d5710c295mshcd5dbc000320b5ep11aab5jsndc2fdbc54268',
+		'X-RapidAPI-Host': 'tripadvisor16.p.rapidapi.com'
 	}
 };
 
-//fetch('https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation?query=mumbai', options)
-	//.then(response => response.json())
-	//.then(response => console.log(response))
-	//.catch(err => console.error(err));
-
-
+fetch('https://tripadvisor16.p.rapidapi.com/api/v1/restaurant/searchLocation?query=mumbai', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
 
 
 
@@ -79,14 +71,14 @@ const options = {
     // Selected Food option >>> venue+food combo details
         //food drop down menu 
         //options : chinese,pizza, american --- NASER 
-        function DropDownEvent() {
+        function DropDown() {
             document.getElementById("LocationDropdown").classList.toggle("show");
           }
           
           // Close the dropdown menu if the user clicks outside of it
           window.onclick = function(event) {
             if (!event.target.matches('.dropbtn')) {
-              var dropdowns = document.getElementsByClassName("dropdown-content-event");
+              var dropdowns = document.getElementsByClassName("dropdown-content");
               var i;
               for (i = 0; i < dropdowns.length; i++) {
                 var openDropdown = dropdowns[i];
@@ -125,12 +117,7 @@ const options = {
             // Submit : save date or rethink??
                 // save date > saves combo to local storage
                 // rethrink > restarts the form
-renderCombo();
 
-function displayResult () {
-    var eventselected = localStorage.getItem("event")
-    var foodselected = localStorage.getItem("food")
-}
     //Local Storage : Date Combo Results : List :  --- NASER 
             // Date 1 : FORM 1 OUTPUT + FORM 2 OUTPUT
             // Date 2 :  FORM 1 OUTPUT + FORM 2 OUTPUT

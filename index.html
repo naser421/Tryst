@@ -1,126 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <title>Tryst</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<title>Tryst</title>
 </head>
+
 <body>
-    <h1>Date Ideas</h1>
-    <p>Web App that helps user find date ideas by event and venue type and recommends nearby food locations based off of the users food preferences.</p>
-
-    <!-- BEGIN HEADER-->
-      <header class="header-title" id="header">
-        <div class="home">
-            <h2>Home</h2>
-            <p>Profile:</p>
-        </div> 
-    </header>
- 
-    <!-- BEGIN PLAN YOUR DATE-->
-    <div id="Plan">
-        <section class="plan">
-            <div class="main">
-                <h2>Plan Your Date:</h2>
-            </div>
-        </section>
-    </div>
-
-   <!-- BEGIN FORM SECTION--> 
-   <div id="form">
-    <section class="form">
-        <div class="form-content">
-          </div>
-            <h3>Form</h3>
+	<div class="container body">
+		<div class="container header">
+			<div class="row">
+        <div class="col-lg-2 logo">
+          <img src="images/logo.png">
         </div>
-    </section>
-  
-    <div id="Location">
-    <div class="location-container">
-      <div class="dropdown">
-        <button onclick="DropDownEvent()" class="dropbtn">Event Location</button>
-        <div id="LocationDropdown" class="dropdown-content"
-        <a id="San-Francisco-Event" href="https://sanfranciscoparksalliance.org/events/?gclid=CjwKCAjwh4ObBhAzEiwAHzZYU34BhTDqPkuM7ZSTrNRMDcgvTH-UMEJ6_5k8Hq_CTavDWSpbse1aeBoC4DQQAvD_BwE">San Francisco Events</a>
-        <a id="Los-Angeles-Event" href="https://www.goldstar.com/los-angeles/categories/music-tickets?utm_source=google&utm_medium=cpc&gclid=CjwKCAjwh4ObBhAzEiwAHzZYUy8BfGwV0ahOMsKocnXDBECsecfFhus3yQpahwVXgsxyfjXDYBl0DhoChawQAvD_BwE&utm_campaignid=17235596301&utm_adgroupid=139506385151&utm_adid=628108337021&utm_term=&utm_matchtype=&utm_campaign=TTG_GS_g_us_acq_search_generic_DSA&utm_adgroup=Generic_Music_DSA&gclid=CjwKCAjwh4ObBhAzEiwAHzZYUy8BfGwV0ahOMsKocnXDBECsecfFhus3yQpahwVXgsxyfjXDYBl0DhoChawQAvD_BwE">Los Angeles Events</a>
-        <a id="New-York-Event" href="https://www.viator.com/New-York-City-tourism/d687-r6517262291-s109979651?mcid=28353&tsem=true&supci=-1121851838&supag=6517262291&supsc=kwd-348476341164&supai=273084059420&supap=&supdv=c&supnt=g&supti=kwd-348476341164&suplp=9031947&supli=1023191&m=28353&supag=6517262291&supsc=kwd-348476341164&supai=273084059420&supap=&supdv=c&supnt=nt%3Ag&suplp=9031947&supli=1023191&supti=kwd-348476341164&tsem=true&supci=kwd-348476341164&supap1=&supap2=&gclid=CjwKCAjwh4ObBhAzEiwAHzZYU3OGKB22PMlnz7R3yI_whmLFPNlh1SY1x04_7xXrh73VvNDj1QExkBoCdO0QAvD_BwE">New York Events</a>
-        </div>
+				<div class="col-lg-10 site">
+					<h1>Date Ideas</h1>
+					<p>Matched..now what? Tryst!</p>
+				</div>
+			</div>
+		</div>
+		<!-- BEGIN HEADER-->
+		<div class="container menuarea">
+			<div class="row">
+				<div class="col-12">
+					<nav class="menu" id="menuarea"> <a href="#home">Home</a> <a href="#profile">Profile</a> </header>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 plan">
+					<h2>Plan Your Date:</h2> </div>
+				<div class="col-lg-6 form">
+					<h2>Form</h2> </div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="container types">
+						<div class="dropdown">
+							<button onclick="DropDown()" class="dropbtn">Event Location</button>
+							<div id="LocationDropdown" class="dropdown-content"> <a id="San-Francisco-Event" href="#">San Francisco Events</a> <a id="Los-Angeles-Event" href="#">Los Angeles Events</a> <a id="New-York-Event" href="#">New York Events</a> </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="container types">
+						<div class="dropdown">
+							<button onclick="DropDown()" class="dropbtn">Food</button>
+							<div id="FoodDropdown" class="dropdown-content"> <a value="SanFrancisoLocation" id="San-Francisco" href="#">San Francisco Food</a> <a value="LosAngelesLocation" id="Los-Angeles" href="#">Los Angeles Food</a> <a value="NewYorkLocation" id="New-York" href="#">New York Food</a>
+								<!-- add location links from API-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 venue_type">
+					<h2>Venue Type:</h2> </div>
+				<div class="col-lg-6 event_type">
+					<h2>Event Type:</h2> </div>
+			</div>
+		</div>
+    <div class="container">
+      <div class="row">
+        <button id="submit-form" class="submit-form-btn btn-style-main">SUBMIT FORM</button>
       </div>
-      <p>Location</p>  
     </div>
-   </div>
-
-   <div id="Food">
-    <div class="food-container">
-      <div class="dropdown">
-        <button onclick="DropDown()" class="dropbtn">Food</button>
-          <div id="FoodDropdown" class="dropdown-content">
-          <a value= "SanFrancisoLocation" id="San-Francisco" href="https://www.yelp.com/search?find_desc=Food&find_loc=San+Francisco%2C+CA">San Francisco Food</a>
-          <a value="LosAngelesLocation" id="Los-Angeles" href="https://www.yelp.com/search?find_desc=Food&find_loc=Los+Angeles%2C+CA">Los Angeles Food</a>
-          <a value="NewYorkLocation" id="New-York" href="https://www.yelp.com/search?find_desc=Food&find_loc=New+York%2C+NY">New York Food</a>
-          <!-- add location links from API-->
-
+	
+  
+<div class="container results">
+      <div class="row">
+        <div class="col-12">
+            <div class="results-content">
+              <h2>Results</h2>
+           </div>
         </div>
-      <p>Food</p>  
     </div>
-   </div>
 
-   <div id="Venue Type">
-    <div class="venue-content">
-      <p>Venue Type:</p>  
-    </div>
-   </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div id="Result 1">
+              <div class="result">
+                <h4>Result 1</h4>
+                <p>Venue Results</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div id="Result 2">
+              <div class="result">
+                <h4>Result 2</h4>
+                <p>Venue Results</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div id="Result 3">
+              <div class="result">
+                <h4>Result 3</h4>
+                <p>Venue Results</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+         <button id="save" class="save-form-btn btn-style-main">SAVE</button></div>
+        </div>
+        <!-- BEGIN RESULTS SECTION-->
+  
 
-   <div id="Event Type">
-    <div class="event-content">
-      <p>Event Type:</p>  
-    </div>
-   </div>
+			
+			<!-- LOCAL STORAGE : SAVED DATES SECTION-->
+<div class="container">
+			<div class="dates">
+					<div class="saved-content">
+						<h2>Local Storage : Saved Tryst</h2>
+				</div>
 
-   <button id="submit-form" class="submit-form-btn btn-style-main">SUBMIT FORM</button>
-
-   <!-- BEGIN RESULTS SECTION-->
-   <div id="results">
-    <section class="results">
-        <div class="results-content">
-          // food results
-            <h3>Results</h3> 
-    </section>
-   </div>
-
-   <div id="Result 1">
-    <div class="result-1">
-      <p>Result 1</p>  
-     <p>venue results
-    </div>
-   </div>
-
-   <div id="Result 2">
-    <div class="result-2">
-      <p>Result 2</p> 
-      <p>Food + Venue</p> 
-    </div>
-   </div>
-
-   <div id="Result 3">
-    <div class="result-3">
-      <p>Result 3</p>  
-      <p>Food + Venue</p>
-    </div>
-   </div>
-   
-   <!-- LOCAL STORAGE : SAVED DATES SECTION-->
-   <div id="Saved Dates">
-    <section class="saved-dates">
-        <div class="saved-content">
-            <h3>Local Storage : Saved Dates</h3>
-    </section>
-     </div>
-   </div>
-
-   <script src="./script.js"></script>
-   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</div>
+			</div>
+			<script src="./script.js"></script>
+			<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		</div>
 </body>
+
 </html>
