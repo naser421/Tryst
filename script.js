@@ -125,7 +125,12 @@ const options = {
             // Submit : save date or rethink??
                 // save date > saves combo to local storage
                 // rethrink > restarts the form
+renderCombo();
 
+function displayResult () {
+    var eventselected = localStorage.getItem("event")
+    var foodselected = localStorage.getItem("food")
+}
     //Local Storage : Date Combo Results : List :  --- NASER 
             // Date 1 : FORM 1 OUTPUT + FORM 2 OUTPUT
             // Date 2 :  FORM 1 OUTPUT + FORM 2 OUTPUT
