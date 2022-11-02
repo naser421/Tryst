@@ -24,3 +24,15 @@ There is a spot next to the event location where you can click to explore the me
 
 <img width="429" alt="Screenshot 2022-11-02 at 4 09 06 PM" src="https://user-images.githubusercontent.com/112728880/199619198-13ca9f2b-5d7f-4b39-a81d-6f88f21a70a4.png">
 
+## Submit Form Button
+
+Once you've selected the kind of event and food location you enjoy, click the Submit button to see the venues that will work best for your first date based on your selections.
+
+<img width="915" alt="Screenshot 2022-11-02 at 4 16 06 PM" src="https://user-images.githubusercontent.com/112728880/199619951-3a05527e-1e2f-4ab0-943e-96d83504b37d.png">
+
+## Results
+
+You will be given three alternative outcomes to pick from after submitting the form with the meal and event type, allowing you to thoroughly enjoy your first date.
+
+<img width="915" alt="Screenshot 2022-11-02 at 4 18 36 PM" src="https://user-images.githubusercontent.com/112728880/199620192-4cf39bf8-299f-49a6-b7f2-1be5f4d68a28.png">
+
