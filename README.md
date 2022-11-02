@@ -36,3 +36,9 @@ You will be given three alternative outcomes to pick from after submitting the f
 
 <img width="915" alt="Screenshot 2022-11-02 at 4 18 36 PM" src="https://user-images.githubusercontent.com/112728880/199620192-4cf39bf8-299f-49a6-b7f2-1be5f4d68a28.png">
 
+## Save Button
+
+You can choose to save those alternatives after viewing the results by clicking the save button so you can return to them before your date.
+
+<img width="885" alt="Screenshot 2022-11-02 at 4 22 39 PM" src="https://user-images.githubusercontent.com/112728880/199620614-3f95d63b-02cf-497e-ba33-e18917c7c280.png">
+
