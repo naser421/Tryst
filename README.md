@@ -42,3 +42,8 @@ You can choose to save those alternatives after viewing the results by clicking 
 
 <img width="885" alt="Screenshot 2022-11-02 at 4 22 39 PM" src="https://user-images.githubusercontent.com/112728880/199620614-3f95d63b-02cf-497e-ba33-e18917c7c280.png">
 
+## Saved Tryst
+
+If you use the save button to save your results, you can return at a later time and they will still be there even if you restart the application because they were saved to your local storage.If you use the save button to save your results, you can return at a later time and they will still be there even if you restart the application because they were saved to your local storage.
+
+<img width="906" alt="Screenshot 2022-11-02 at 4 25 58 PM" src="https://user-images.githubusercontent.com/112728880/199620950-bb1c91ca-8a39-41d8-9074-cfd6f4dc4314.png">
